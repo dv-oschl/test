@@ -1,0 +1,40 @@
+name: Question
+description: Ask a question about the software
+title: "Question: "
+labels: ["Type: Question", "Priority: Medium", "Status: Pending"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for being interested in this project!
+
+        Helpful hints:
+        - Check if someone else already asked the question (also check closed issues)
+        - Please read the documentation, maybe you'll find an answer there
+
+        Please fill out the following text fields, so we get a clear understanding about your question.
+        Once you submitted the question, we will try to help you, as soon, as we can.
+  - type: textarea
+    id: question
+    attributes:
+      label: What is your question?
+      description: Tell us about what you want to know.
+      placeholder: Your question ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: What version are you running?
+      description: Please tell us the version or commit hash you are running.
+      placeholder: Version number, docker image tag or commit hash
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/dv-oschl/test/blob/main/CODE_OF_CONDUCT.md). 
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
