@@ -1,5 +1,5 @@
 name: Bug Report
-description: File a bug report.
+description: Report a bug you encountered
 title: "Bug: "
 labels: ["Type: Bug", "Priority: Medium", "Status: Pending"]
 body:
@@ -7,7 +7,8 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-        Please make sure your bug is not already reported.
+        Before reporting a bug, please look, if the bug was already reported.
+        Please check the documentation, maybe you'll find a solution there.
   - type: textarea
     id: what-happened
     attributes:
