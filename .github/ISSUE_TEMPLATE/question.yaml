@@ -26,7 +26,7 @@ body:
     id: version
     attributes:
       label: What version are you running?
-      description: Please tell us the version or commit hash you are running.
+      description: Please tell us the version or commit hash you are running (optional).
       placeholder: Version number, docker image tag or commit hash
     validations:
       required: false
