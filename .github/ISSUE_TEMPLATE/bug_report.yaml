@@ -1,12 +1,13 @@
 name: Bug Report
 description: File a bug report.
 title: "Bug: "
-labels: ["Type: Bug"]
+labels: ["Type: Bug", "Priority: Medium", "Status: Pending"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
+        Please make sure your bug is not already reported.
   - type: textarea
     id: what-happened
     attributes:
