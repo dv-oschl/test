@@ -1,0 +1,32 @@
+name: Feature request
+description: Let us know your ideas and suggestions
+title: "Feature request: "
+labels: ["Type: Feature Request", "Priority: Medium", "Status: Pending"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to give us ideas and suggestions!
+
+        Helpful hints:
+        - Check if someone else already requested your idea
+        - Check if the feature is already implemented (maybe you are running an outdated version?)
+
+        Please fill out the following text fields, so we get a clear understanding about your feature request.
+        Once you submitted the feature request, we will respond, as soon, as we can.
+  - type: textarea
+    id: feature-request
+    attributes:
+      label: Feature request
+      description: Tell us about your ideas and suggestions
+      placeholder: Your feature request ....
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/dv-oschl/test/blob/main/CODE_OF_CONDUCT.md). 
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
