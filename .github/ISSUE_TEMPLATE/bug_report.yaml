@@ -45,12 +45,14 @@ body:
     attributes:
       label: Relevant log output
       description: Please copy and paste any relevant log output.
+      placeholder: Paste the logs here
       render: shell
   - type: textarea
     id: additional-info
     attributes:
       label: Additional information
-      description: You can upload additional information like screenshots here.
+      description: You can provide us additional information here (e. g. screenshots or videos)
+      placeholder: More helpful information
     validations:
       required: false
   - type: checkboxes
