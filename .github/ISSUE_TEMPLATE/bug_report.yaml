@@ -12,8 +12,17 @@ body:
     id: what-happened
     attributes:
       label: What happened?
-      description: Also tell us, what you expected to happen and how to reproduce it.
+      description: Also please tell us, what you expected to happen and how to reproduce it.
       placeholder: Tell us what happened, what you expected and how to reproduce!
+      value: |
+        ## What happened?
+        Tell us about the bug you encountered.
+        
+        ## What did you expect to happen?
+        Tell us what behaviour you expected.
+
+        ## How to reproduce it
+        Give us step-by-step instructions how to reproduce the bug.
     validations:
       required: true
   - type: input
