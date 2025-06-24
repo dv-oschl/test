@@ -37,16 +37,22 @@ body:
     attributes:
       label: What version are you running?
       description: Please tell us the version or commit hash you are running.
-      placeholder: 1.0.0 / 013b652
-      value: "1.0.0"
+      placeholder: Version number, docker image tag or commit hash
     validations:
       required: true
   - type: textarea
     id: logs
     attributes:
       label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code.
+      description: Please copy and paste any relevant log output.
       render: shell
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional information
+      description: You can upload additional information like screenshots here.
+    validations:
+      required: false
   - type: checkboxes
     id: terms
     attributes:
