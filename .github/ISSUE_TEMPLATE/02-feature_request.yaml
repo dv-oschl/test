@@ -15,11 +15,27 @@ body:
         Please fill out the following text fields, so we get a clear understanding about your feature request.
         Once you submitted the feature request, we will respond, as soon, as we can.
   - type: textarea
-    id: feature-request
+    id: feature-description
     attributes:
-      label: Feature request
-      description: Tell us about your ideas and suggestions
-      placeholder: Your feature request ....
+      label: Describe the feature
+      description: Tell us about the feautre, you would like to see
+      placeholder: Your feature idea ...
+    validations:
+      required: true
+  - type: textarea
+    id: why-needed
+    attributes:
+      label: The need for it
+      description: Tell us why you need this feature
+      placeholder: I need this feature, because ...
+    validations:
+      required: true
+  - type: textarea
+    id: how-it-works
+    attributes:
+      label: How it should work
+      description: Give us some details about how you expect the feature tot work
+      placeholder: The feature should work like this ...
     validations:
       required: true
   - type: checkboxes
